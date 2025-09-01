@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wall Visualization</title>
+    <link rel="stylesheet" href="Chumban_BopcheWallVisualization.css">
+</head>
+<body>
+    <h1>Wall Visualization</h1>
+
+    <div class="controls">
+        <label for="numWalls">Number of Walls:</label>
+        <input type="number" id="numWalls" min="1" value="5">
+
+        <label for="heights">Height of Walls (e.g., 4#2#1#3#5):</label>
+        <input type="text" id="heights" value="4#2#1#3#5">
+
+        <button id="visualizeBtn">Visualize Walls</button>
+    </div>
+
+    <div class="visualization-wrapper">
+        <div id="y-axis-labels"></div>
+        <div id="visualization-container"></div>
+    </div>
+
+    <div class="results">
+        <p>Visible from Left: <span id="left-count">0</span></p>
+        <p>Visible from Right: <span id="right-count">0</span></p>
+    </div>
+
+    <script src="Chumban_BopcheWallVisualization.js"></script>
+</body>
+</html>
